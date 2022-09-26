@@ -73,8 +73,8 @@ if __name__ == '__main__':
     bot = telebot.TeleBot(sys.argv[1], parse_mode=None) # You can set parse_mode by default. HTML or MARKDOWN
     del_env()
 
-    max_len_in = 5000
-    max_len_out = 5000
+    max_len_in = 3000
+    max_len_out = 3000
 
     bot.message_handler(commands=['start'])(send_welcome)
     bot.message_handler(commands=['help'])(help)

@@ -1,0 +1,2 @@
+docker build . -t kek
+docker run --env-file main.env kek

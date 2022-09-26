@@ -63,9 +63,6 @@ if __name__ == '__main__':
 
     bot.message_handler(commands=['start'])(send_welcome)
     bot.message_handler(commands=['help'])(help)
-    bot.message_handler(commands=['maza'])(maza)
-    bot.message_handler(commands=['faza'])(faza)
-    bot.message_handler(commands=['joke'])(joke)
     bot.message_handler(commands=['eval'])(bot_eval)
     bot.message_handler(commands=['exec'])(bot_exec)    
 

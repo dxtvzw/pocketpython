@@ -17,28 +17,13 @@ def send_welcome(message):
 
 
 def help(message):
-        bot.send_message(message.chat.id,   "WARNING: This is a NSFW bot!\n" \
-                                            "This bot has the following commands:\n" \
+        bot.send_message(message.chat.id,   "This bot allows to write Python scripts inside the app.\n" \
+                                            "Commands:\n" \
                                             "/start -- start the bot\n" \
                                             "/help -- view documentation\n" \
-                                            "/maza -- faza\n" \
-                                            "/faza -- maza\n" \
-                                            "/joke -- hear a joke\n" \
                                             "/eval -- evaluate a mathematical expression\n" \
                                             "/exec -- exec a python script\n" \
                                             f"Maximal length of a message is {str(max_len_in)} symbols\n")
-
-
-def maza(message):
-        bot.send_message(message.chat.id, 'faza')
-
-
-def faza(message):
-        bot.send_message(message.chat.id, 'maza')
-
-
-def joke(message):
-        bot.send_message(message.chat.id, "your mom gay")
 
 
 def bot_eval(message):
